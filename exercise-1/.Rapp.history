@@ -1,0 +1,45 @@
+my_breakfast <- c(water, biscuit)
+my_breakfast <- c(water, biscuit)
+my_breakfast <- c("water", "biscuit")
+my_lunch <- c("water", "sandwich")
+meals <- list(breakfast, lunch)
+meals <- list(my_breakfast, my_lunch)
+meals
+meals <- list(breakfast = my_breakfast, lunch = my_lunch)
+meals
+meals$dinner <- c("water", "rice")
+meals
+dinner <- meals$dinner
+dinner
+my_lunch
+meals[[5]] <- meals[[2]]
+meals[[5]]
+meals
+early_meals <- list(meals[1], meals[2])
+early_meals
+num_items <- lapply(meals, length())
+num_items <- lapply(meals, length(meals))
+num_items <- lapply(meals, length)
+num_items
+return(meal)
+add_pizza <- function(meal){#
+	meal[length(meal)] <- "pizza"#
+	return(meal)#
+}
+print(add_pizza(dinner))
+add_pizza <- function(meal){#
+	meal[length(meal) + 1] <- "pizza"#
+	return(meal)#
+}
+print(add_pizza(dinner))
+better_meals <- add_pizza(my_breakfast) + add_pizza(my_lunch) + add_pizza(dinner)
+better_meals <- paste(add_pizza(my_breakfast), add_pizza(my_lunch), add_pizza(dinner), sep = "")
+better_meals
+better_meals <- paste(add_pizza(my_breakfast), add_pizza(my_lunch), add_pizza(dinner), sep = " ")
+better_meals
+better_meals <- add(add_pizza(my_breakfast), add_pizza(my_lunch), add_pizza(dinner), sep = " ")
+better_meals <- concat(add_pizza(my_breakfast), add_pizza(my_lunch), add_pizza(dinner), sep = " ")
+better_meals <- cat(add_pizza(my_breakfast), add_pizza(my_lunch), add_pizza(dinner), sep = " ")
+better_meals
+better_meals <- c(add_pizza(my_breakfast), add_pizza(my_lunch), add_pizza(dinner))
+better_meals
